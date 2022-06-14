@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(280, 80%, 35%);
+	color: #f5f6f7;
+    font-family: Tahoma;
+}
+
+h1, #description {
+    margin: 1em auto;
+    text-align: center;
+    font-size: 25px;
+
+  }
+
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    background:rgba(255, 255, 255, .8);
+    color: black;
+    border-radius: 3%;
+    padding: .5%;
+    
+  }
+
+
+label, select, input{
+    display: block;
+    padding-bottom: 2%;
+    width: 100%;    
+    
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input, select{
+    margin: 3% 0 0 0;
+}
+
+
+input[type="text"],input[type="email"], input[type="number"], select, textarea, #submit{
+    background:rgba(255, 255, 255, .3);
+    border: 1px solid rgba(255, 255, 255, .8);;
+}
+
+input[type="radio"]{
+    margin-top: 3%;
+}
+
+
+fieldset{
+    border: none;
+}
+
+
+.products, .inline{
+    display: inline;
+    font-size: 16px;
+    width: unset;
+}
+
+textarea{
+    width: 100%;
+    border: .5px solid rgba(255, 255, 255, .8);
+    margin-top: 2%;
+}
+
+#submit{
+    width: 20vw;
+    margin: 0 auto;
+    color: purple;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+

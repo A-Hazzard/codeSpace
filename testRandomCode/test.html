@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="styles.css" /> 
+<title>TechDips's Survey</title>
+  </head>
+
+
+   
+        <h1 id="title">TechDips's Survey</h1>
+
+        <p id="description"><em>Please inform us about our previous Tech Training Boot Camp<em></p>
+
+        <form id="survey-form">
+<fieldset>
+        <label id="name-label">Name
+            <input id="name" type="text" placeholder="Enter Your Full Name" required />
+        </label>
+
+        <label id="email-label">Email
+            <input id="email" type="email" placeholder="Enter Your Email Address" required />
+        </label>
+
+        <label id="number-label">Age <em style="font-size: 1rem">(optional)</em>
+            <input id="number" type="number" placeholder="Age" min="13" max="120"/>
+        </label>
+</fieldset>
+
+
+<fieldset>
+    <label> What is your current status?
+        <select id="dropdown">
+        <option><em>(status)</em></option>
+        <option>High school Student</option>
+        <option>College Student</option>
+        <option>Full-Time Employee</option>
+        <option>Part-Time Employee</option>
+        </select>
+        </label>
+
+        <label id="rating-label">Please give us a rating from 1 - 5 
+<br>
+        <input class="inline" type="radio" name="selection" value="1"> <p class="products">1</p>
+        <input class="inline" type="radio"  name="selection" value="2"> <p class="products">2</p>
+        <input class="inline" type="radio"  name="selection" value="3"> <p class="products">3</p>
+        <input class="inline" type="radio"  name="selection" value="4"> <p class="products">4</p>
+        <input class="inline" type="radio"  name="selection" value="5"> <p class="products">5</p>
+            </label>
+        
+        <label>Which of the below are your favorite products from our company?
+            <label>
+            <input class="inline" type="checkbox" name="selection" value="Headphones"> <p class="products" class="products">Headphones </p>
+            </label>
+
+            <label>
+            <input class="inline" type="checkbox"  name="selection" value="Mobile Devices"> <p class="products" class="products">Mobile Devices</p>
+            </label>
+
+            <label>
+            <input class="inline" type="checkbox"  name="selection" value="Chargers"><p class="products" class="products"> Chargers</p>
+            </label>
+
+            <label>
+            <input class="inline" type="checkbox"  name="selection" value="SmartWatches"> <p class="products" class="products">SmartWatches</p>
+            </label> 
+
+            <label>
+            <input class="inline" type="checkbox"  name="selection" value="Keyboards"> <p class="products" class="products">Keyboards</p>
+            </label>
+            </label>
+</fieldset>
+
+
+<fieldset>
+    <label> Briefly describe you're experience with us
+        <textarea placeholder="Experience" rows="6"></textarea>
+    </fieldset>
+
+    <input id="submit" type="submit" value="Submit" />
+        </form>
+  
+
+      
+
+</body>
+  </html>

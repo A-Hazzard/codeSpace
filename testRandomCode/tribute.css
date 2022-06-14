@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, p:nth-of-type(1){
+    text-align: center;
+  }
+
+  header p{
+    font-family:  fantasy;
+    font-size: 18px;
+  }
+  h1{
+    font-family: cursive;
+  }
+
+#img-div, #timeline, footer{
+
+    background-color: rgb(248, 244, 248);;
+}
+
+  #image{
+    display: block;
+    height: 50%;
+    max-width: 100%;
+    max-height: 50%;
+    margin: auto;
+  
+  }
+  
+  #img-caption{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #tribute-info{
+      text-align: center;
+  }
+  
+
+#timeline ul{
+
+  margin: 0 25% 0 25%;
+  font-size: 25px;
+ 
+}
+
+#timeline li{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#summary{
+  width: 70%;
+  margin: 0 15% auto;
+}
+
+#summary p{
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+footer{
+      
+      height: 15%;
+      text-align: center;
+  }
+
+  footer h3{
+    padding: 2.5% 0 0 0;
+  }
