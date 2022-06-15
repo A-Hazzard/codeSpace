@@ -15,18 +15,18 @@
     padding: 2rem;
 }
 
+
 #header-img{
     height: 50px;
-    margin: 9.5% 32% auto;
-    position: absolute;
-
+    position: relative;
+    top: 15px;
 }
 
 #header-text{
     text-align: unset;
-    position: absolute;
-    margin-top: 10%;
-    margin-left: 38%;
+ 
+    display: inline;
+
 }
 
 #free-trial{
@@ -36,7 +36,7 @@
 
 #nav-bar{
     display: inline;
-    margin-left: 25%;
+    margin-left: 10%;
 }
 
 .nav-link{
@@ -55,5 +55,16 @@ ul, ul li{
     
 }
 
-
+#sec-1{
+    height: 50rem;
+    background: linear-gradient(-45deg, 
+    transparent ,transparent ,transparent ,transparent ,transparent ,transparent ,transparent ,transparent ,transparent ,transparent ,transparent ,transparent ,
+    yellow,
+    yellow ,
+    var(--navbar-backgroundColor2) ,
+     var(--navbar-backgroundColor2)
+   
+     
+     );
+}
 
