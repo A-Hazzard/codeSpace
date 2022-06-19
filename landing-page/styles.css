@@ -93,17 +93,17 @@ section{
 
 #container{
     display: flex;
-
-    flex-wrap: wrap;
     border: 3px solid black;
 }
 
 .img-container{
     border: 5px solid black;
-
+    display: inline;
+    width: 100%;
 }
 
+
 .img-container img{
-    height: 500px;
+    height: 400px;
 }
 
