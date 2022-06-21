@@ -3,26 +3,25 @@
 *{
     padding: 0;
     margin: 0;
+   
 }
 
 body{
-    background-color: var(--backgroundColor);
-}
-
-:root{
-    --backgroundColor: hsl(0, 0%, 95%);
-    --navbar-backgroundColor: hsl(110, 50%, 35%);
+    background-color: hsl(0, 0%, 95%);
 }
 
 #header{
-
+    background-color: hsl(0, 0%, 95%);
     position: sticky;
-
+    top: 0;
     padding: 1rem;
 }
 
 #header *{
     margin-top: -2%;
+    font-family: 'Chakra Petch';
+  
+
 }
 
 
@@ -34,7 +33,7 @@ body{
 
 #header-text{
     text-align: unset;
- 
+    
     display: inline;
 
 }
@@ -46,7 +45,9 @@ body{
 
 #nav-bar{
     display: inline;
-    margin-left: 20%;
+    position: relative;
+    top: 0;
+    margin-left: 10%;
 }
 
 .nav-link{
@@ -65,10 +66,7 @@ ul, ul li{
     
 }
 
-main{
-    width: 100%;
-    
-}
+
 
 section{
     width: 100%;
@@ -82,7 +80,7 @@ section{
 
 #CTA{
     margin-left: 15%;
-    margin-top: -8%;
+    margin-top: -7%;
     font-size: 50px;
     position: absolute; 
     top: 25%;
@@ -112,27 +110,88 @@ section{
 
 #sec-2{
     display: flex;
-    margin-top: auto;
+    
+    flex-direction: column;
 }
 
-.img-container:nth-child(1){
-    order: 2;
+
+.container{
+    
+   
+    display: flex;
+    margin-bottom: 4%;
+}
+
+.xbox, .playstore{
+    margin-top: 5%;
+}
+
+
+
+.container img{
+    height: 300px;
+    width: 300px;
+   
+}
+
+.container:last-child img{
+    height: 400px;
 }
 
 .img-container{
- 
-    width: 100%;
+    width: 50%;
+}
+
+.img-container img{
+    margin: 0 35% auto;
+}
+
+.price-container{
+  
+    width: 50%;
+}
+
+.card-name{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 25% auto;
+    
 }
 
 
-.img-container img{
-    height: 400px;
-    width: 330px;
+
+.price-btn{
+    background-color: #4CAF50; /* Green */
+    border: none; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 200px;
+  }
+
+.buy-btn{
+    background-color: #000000;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+hr{
+    width: 70%;
+    height: 1px;
+    
+    background-color: black;
     margin-left: 15%;
 }
 
-#video{
-    margin: 4% 15% auto;
+#center-video{
+    text-align: center;
+    padding-top: 5%;
 }
 
 #sign-up{
@@ -170,6 +229,17 @@ section{
     font-family: 'Chakra Petch', sans-serif;
 }
 
+#submit:hover{
+    background-color: rgb(159, 158, 158);
+}
+.price-btn:hover{
+    background-color: #2f6e31;
+}
+
+.buy-btn:hover{
+    background-color: #4CAF50;
+}
+
 input[type=email] {
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -186,3 +256,6 @@ input[type=submit] {
     cursor: pointer;
   }
 
+@media only screen and (min-width: 767px){
+    
+}
