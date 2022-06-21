@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+
+:root{
+    --h1FontSize: 35px;
+    --freeTrial: 2rem;
+    --linkSize: 1.5rem;
+    --CTA-font-size: 50px;
+    --CTA-span-font-size: 105px;
+    --email-width: 700px;
+ 
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -14,6 +25,7 @@ body{
     background-color: hsl(0, 0%, 95%);
     position: sticky;
     top: 0;
+    z-index: 1;
     padding: 1rem;
 }
 
@@ -33,13 +45,13 @@ body{
 
 #header-text{
     text-align: unset;
-    
+    font-size: var(--h1FontSize);
     display: inline;
 
 }
 
 #free-trial{
-    font-size: 2rem;
+    font-size: var(--freeTrial);
     margin: 20px;
 }
 
@@ -61,7 +73,7 @@ body{
 
 ul, ul li{
     display: inline;
-    font-size: 1.5rem;
+    font-size: var(--linkSize);
     padding: 5px;
     
 }
@@ -81,7 +93,7 @@ section{
 #CTA{
     margin-left: 15%;
     margin-top: -7%;
-    font-size: 50px;
+    font-size: var(--CTA-font-size);
     position: absolute; 
     top: 25%;
     color:hsl(0, 0%, 95%);
@@ -93,7 +105,7 @@ section{
 
 #CTA span{
     color: red;
-    font-size:105px;
+    font-size:var(--CTA-span-font-size);
     font-family: 'Permanent Marker', cursive; ;
 }
 
@@ -256,6 +268,67 @@ input[type=submit] {
     cursor: pointer;
   }
 
-@media only screen and (min-width: 767px){
+@media screen and (max-width: 768px){
+   
+    #free-trial{
+        font-size: calc(var(--freeTrial) - 5px);
+    }
+
+    .nav-link{
+        font-size: calc(var(--linkSize) - 5px);
+    }
+
+    #nav-bar{
+        display: block;
+        margin: 2% 0 auto;
+    }
+
+    .container{
+        flex-direction: column;
+        
+    }
+
+    .img-container, .price-container{
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-container img{
+        margin: unset;
+    }
+
+    #video{
+        width: 100%;
+    }
+    
+    #email{
+        width: calc(var(--email-width) - 50%);
+        font-size: 15px;
+        margin-bottom: 2%;
+    }
+
+    #CTA{
+        font-size: calc(var(--CTA-font-size) - 25px);
+        margin: 2% 5% auto;
+    }
+
+    #CTA span{
+        font-size: calc(var(--CTA-span-font-size) - 40px);
+       
+        
+    }
+
+    #today{
+        margin-top: 60%;
+    }
+
+    .playstore img{
+        width: 200px;
+    }
+
+    .card-name{
+        font-family: 'Chakra Petch';
+    }
+
     
 }
