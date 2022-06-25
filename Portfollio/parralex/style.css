@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parallex{
+    background-image: url("http://allisonsdesigns.com/wp-content/uploads/2014/05/about-me-background.png");
+
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    position: relative;
+    padding-top: 25%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    animation: intro 2.5s;
+    animation-fill-mode: forwards;
+    
+}
+
+h2{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    position: absolute;
+    margin-top: 16%;
+    left: -2%;
+    animation: container 2.5s ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+
+.container{
+    position: relative;
+    background-color: hsl(347, 51%, 93%);
+    min-height: 500px; 
+    
+}
+
+
+@keyframes intro{
+    from{
+        padding-top: 25%;
+        opacity: .5%;
+    }
+
+    to{
+        padding-top: 15%;
+    }
+
+    
+}
+
+@keyframes container{
+    from{
+        left: -2%;
+    }
+
+    to{
+        left: 6%;
+    }
+}
+
