@@ -1,158 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway:wght@800&display=swap');
+
 :root{
-    --container-bg-color:  hsl(347, 51%, 93%);
+    --main-font-family: 'Solway', serif;
+    --bio-width: 50%;
+    --h1-font-size: 5rem;
+    --paragraph-font-size: 2em;
 }
+
 
 *{
     margin: 0;
     padding: 0;
 }
 
-.parallex{
-    background-image: url("http://allisonsdesigns.com/wp-content/uploads/2014/05/about-me-background.png");
+body{
+    background-image: url("https://lh3.googleusercontent.com/i-tQEvfMhom1SYZnTsRajObQ7F9ryUO4ROWXrWwnkL981_wxUv0GzpNd-O6e5XqRlIKuruLAoo8K6imR0nN1KadEbzyvqsi_WPBSZeqqnh-5VBXLcGDGqHuiJHx8bqbAiSrhOfbGUGSLGUsoEw1iN8ZJaCv6gCdyX-NqzXLM7aMN-y8EE_uxeivrZUaWot3v7Zogpea6gKGuZXYrf4VMxhfryVbKaPvseTiV-En82vqFXRkEazmzEO1YLt9EBatv4usy34ciaQ0YI6kA24W0DokLGLfFeW3nwURqUo7fB3YHMczogxPIUH7u71OMHwKYsh062bBlYd0qFaIuj_KShHSNpCOSenNpVyIfFN5lAF9R54CED2vtEACMthjlJAfZdAqJb5sjzMTNF9zCFAxMtRKsKOW2tX_dCAzXFuPDVjaa0XYMLCDJKLwX0cwYqgp6LniHN75C7ZqylS6OofJAIGQWd7fQgfvZFAgAwmBAnfsHip1WA5jqvMfJzxqcjEHAKn9mlMLPeDp2xLVPn0dHyb8gMMpq8ZhqV6RlSl6mjdYCkQf7Eae2nqIL1tx20j90Xv1QZauv2TYa5dQf6vLqTI00VMVgwZ_zK74NJIKmamMQIgxsqJ2eTZVCofgfXS4oO3E65_f2hgQJ5IWEi_zs4JwZuFTPCv9BosvCmI6doUMdGddnsFj6dBLGLa9LAbyZTAMPTs49ZSunR-oZSQRfQ1-7ai_SdYa6KdfYKdZtNvp6DO7uJxpP8S0cOG2FDWu6RS_dxkxxCKUxx-9wTmhF5zL54P4wXFRk9N8vVipkNduGetTHQsImvaxmotFqyAx-8ulWch4=w1668-h938-no?authuser=2");
+    background-repeat:no-repeat ;
+    background-position: center center center ;
+  
 
-    min-height: 400px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-h1{
-    color: white;
-    position: relative;
-    
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Courier New', Courier, monospace;
-    animation: intro 2.5s;
-    animation-fill-mode: forwards;
-    
+nav{
+    position: fixed;
+    top: 0;
 }
 
-h2{
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 60px;
-    position: absolute;
-    margin-top: 10%;
-    left: -2%;
-    animation: h2 2.5s ease-in-out;
-    animation-fill-mode: forwards;
-    
-}
-
-h3{
-    color: black;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 60px;
-    position: absolute;
-    left: 25%;
-    animation: h3 1s ease-in-out;
-    animation-fill-mode: forwards;
-    animation-delay: 2.5s;
-}
-
-.container{
-    position: relative;
-    background-color: var(--container-bg-color);
-    min-height: 500px; 
-    border: 2px solid;
-}
-
-.projects{
-    background-color: hsl(345, 57%, 64%);
+#welcome-section{
     height: 100vh;
-    border: 2px solid;
+    width: var(--bio-width);
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+#welcome-section h1{
+    color: rgb(12, 149, 127);
+    font-family: var(--main-font-family);
+    font-size: var(--h1-font-size);
 
 }
 
-#projects-flex-wrapper{
-    border: 2px solid;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-     margin-top: 15%;
-    
-    
-    
+#welcome-section p{
+    color: aliceblue;
+    font-size: var(--paragraph-font-size);
+    font-family: var(--main-font-family);
+    padding: 5%;
 }
 
-.project-img{
-    height: 350px;
-   
-    margin-bottom: 2%;
-    border: 2px solid;
-
-}
-
-.tribute-img{
-    margin-left: 5%;
-}
-
-.cat-img{
-    margin-left: 15%;
-}
-
-.flex-container{
-   
-    border: 2px solid;
-    width: 50%;   
-}
-
-
-.HTML-document-img{
-    margin-left: 15%;
-}
-
-
-.form-img{
-    margin-left: 20%;
-}
-
-
-
-
-.project-title{
-    font-size: 22px;
-   font-family: 'Courier New', Courier, monospace;
-    margin-left: 27%;
-    border: 2px solid;
-
-}
-
-@keyframes intro{
-    from{
-        padding-top: 20%;
-        opacity: .5%;
-    }
-
-    to{
-        padding-top: 10%;
-    }
-
-    
-}
-
-@keyframes h2{
-    from{
-        left: -2%;
-    }
-
-    to{
-        left: 6%;
-    }
-}
-
-@keyframes h3{
-    from{
-        top: 0%;
-    }
-
-    to{
-        top: 10%;
-    }
-}
-
+/*ADD MEDIA QUIERIES*/
