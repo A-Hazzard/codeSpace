@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Solway:wght@800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 :root{
     --main-font-family: 'Solway', serif;
-    --bio-width: 50%;
     --h1-font-size: 5rem;
     --paragraph-font-size: 2em;
+    --contact-btn-padding: 3%;
+    --contact-btn-width: 35%;
+    --contact-btn-height: 5rem;
+
 }
 
 
@@ -13,38 +16,101 @@
     padding: 0;
 }
 
-body{
-    background-image: url("https://lh3.googleusercontent.com/i-tQEvfMhom1SYZnTsRajObQ7F9ryUO4ROWXrWwnkL981_wxUv0GzpNd-O6e5XqRlIKuruLAoo8K6imR0nN1KadEbzyvqsi_WPBSZeqqnh-5VBXLcGDGqHuiJHx8bqbAiSrhOfbGUGSLGUsoEw1iN8ZJaCv6gCdyX-NqzXLM7aMN-y8EE_uxeivrZUaWot3v7Zogpea6gKGuZXYrf4VMxhfryVbKaPvseTiV-En82vqFXRkEazmzEO1YLt9EBatv4usy34ciaQ0YI6kA24W0DokLGLfFeW3nwURqUo7fB3YHMczogxPIUH7u71OMHwKYsh062bBlYd0qFaIuj_KShHSNpCOSenNpVyIfFN5lAF9R54CED2vtEACMthjlJAfZdAqJb5sjzMTNF9zCFAxMtRKsKOW2tX_dCAzXFuPDVjaa0XYMLCDJKLwX0cwYqgp6LniHN75C7ZqylS6OofJAIGQWd7fQgfvZFAgAwmBAnfsHip1WA5jqvMfJzxqcjEHAKn9mlMLPeDp2xLVPn0dHyb8gMMpq8ZhqV6RlSl6mjdYCkQf7Eae2nqIL1tx20j90Xv1QZauv2TYa5dQf6vLqTI00VMVgwZ_zK74NJIKmamMQIgxsqJ2eTZVCofgfXS4oO3E65_f2hgQJ5IWEi_zs4JwZuFTPCv9BosvCmI6doUMdGddnsFj6dBLGLa9LAbyZTAMPTs49ZSunR-oZSQRfQ1-7ai_SdYa6KdfYKdZtNvp6DO7uJxpP8S0cOG2FDWu6RS_dxkxxCKUxx-9wTmhF5zL54P4wXFRk9N8vVipkNduGetTHQsImvaxmotFqyAx-8ulWch4=w1668-h938-no?authuser=2");
-    background-repeat:no-repeat ;
-    background-position: center center center ;
-  
+
+
+header{
+    background-color: black;
+    height: 5rem;
+   
 
 }
 
 nav{
     position: fixed;
     top: 0;
+    margin-top: 1%;
+    text-align: center;
+    padding-left: 5%;
+    width: 100%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin-right: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul li{
+    display: inline;
 }
 
 #welcome-section{
-    height: 100vh;
-    width: var(--bio-width);
-    margin-top: 5%;
-    margin-left: 2%;
+    height: 100vh; 
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.me{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#left-section{
+   flex: 1;
+   text-align: center;
+}
+
+#right-section{
+    flex: 1;
 }
 
 #welcome-section h1{
-    color: rgb(12, 149, 127);
+    color: black;
     font-family: var(--main-font-family);
     font-size: var(--h1-font-size);
-
+   margin-top: 15%;
 }
 
 #welcome-section p{
-    color: aliceblue;
+    color: black;
     font-size: var(--paragraph-font-size);
     font-family: var(--main-font-family);
     padding: 5%;
 }
+
+#contact-btn{
+    padding: var(--contact-btn-padding);
+    border-radius: .5rem;
+    width: var(--contact-btn-width);
+    height: var(--contact-btn-height);
+    background-color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Nothing You Could Do', cursive;
+}
+
+#contact-btn:hover{
+    animation: button .2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button {
+    from{
+        height: var(--contact-btn-height);
+        width: var(--contact-btn-width);
+    }
+
+    to{
+        height: calc(var(--contact-btn-height) + 1rem);
+        width: calc(var(--contact-btn-width) + 5%);
+
+    }
+}
+
 
 /*ADD MEDIA QUIERIES*/
