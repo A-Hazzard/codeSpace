@@ -17,21 +17,16 @@
 }
 
 
-
-header{
-    background-color: black;
-    height: 5rem;
-   
-
-}
-
 nav{
     position: fixed;
     top: 0;
-    margin-top: 1%;
+    
     text-align: center;
     padding-left: 5%;
+    padding-top: 1.3%;
     width: 100%;
+    height: 5rem;
+    background-color: black;
 }
 
 nav ul li a{
@@ -83,6 +78,14 @@ nav ul li{
     padding: 5%;
 }
 
+#welcome-section .fa-github{
+    font-size: 5rem;
+    display: block;
+    margin-top: 2%;
+    text-decoration: none;
+    color: black;
+}
+
 #contact-btn{
     padding: var(--contact-btn-padding);
     border-radius: .5rem;
@@ -95,10 +98,88 @@ nav ul li{
 }
 
 #contact-btn:hover{
-    animation: button .2s ease-in-out;
+    animation: button .2s linear;
     animation-fill-mode: forwards;
 }
 
+#about{
+    height: 100vh; 
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+}
+
+#about .left-container{
+    flex: 1;
+    height: 100vh;
+    border: 1px solid red;
+}
+
+#about .right-container{
+    flex: 1;
+   text-align: center;
+}
+
+#about h2{
+    color: black;
+    font-family: var(--main-font-family);
+    font-size: var(--h1-font-size);
+   margin-top: 15%;
+}
+
+#about p{
+    color: black;
+    font-size: var(--paragraph-font-size);
+    font-family: var(--main-font-family);
+    padding: 5%;
+}
+
+#laptop{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid green;
+}
+
+#projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ 
+}
+
+.project-title-card{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 5% auto;
+}
+
+
+
+.project-img{
+    object-fit: contain;
+   
+    width: 100%;
+    height: 22rem;
+}
+
+
+#projects h3{
+    color: black;
+    font-family: var(--main-font-family);
+    font-size: var(--h1-font-size);
+   margin-top: 5%;
+   width: 100%;
+   text-align: center;
+}
+
+
+.project-tile .project-information{
+    font-size: larger;
+    font-family: var(--main-font-family);
+    text-align: center;
+}
 @keyframes button {
     from{
         height: var(--contact-btn-height);
@@ -113,4 +194,13 @@ nav ul li{
 }
 
 
-/*ADD MEDIA QUIERIES*/
+
+@media (max-width: 1024px){
+    #about .right-container p{
+        font-size: calc(var(--paragraph-font-size) - .3em);
+    }
+
+    #projects .project-title-card{
+        padding-left: 5%;
+    }
+}
